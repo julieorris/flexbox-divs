@@ -109,12 +109,21 @@ body {
   height: 100%;
 }
 
+header, footer, main {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+
 .wrapper {
   /*add display:flex and set justify-content to space-between*/
-  font-weight: 700;
+  font-weight: 100;
   display:flex;
   justify-content: space-between;
   align-items: center;
+  flex-flow: row wrap;
 }
 
 .div-1, .div-2, .div-3 {
@@ -130,14 +139,50 @@ body {
   height: 300px;
   width: 30%;
   padding: 0 20px;
+  margin: 0;
+
 }
 
-.div-1, .div-2 {
+.div-2 {
     border-right: 2px dashed grey;
+    border-left: 2px dashed grey;
+} 
+
+header, footer {
+    width: 100%;
 }
 
 
+footer ul{
+    list-style: none;
+    padding: 0px;
+    justify-content: flex-start;
+}
 
+footer ul li {
+    display: inline-block;
+    
+}
+
+footer ul li img{
+    width: 50px;
+    height: 50px;
+}
+
+/*** header stylings***/
+h1 , h3 {
+    text-align: left;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: white;
+}
+
+h3{
+    font-weight: 400;
+}
+span {
+    font-weight: 700;
+    font-family: 'Source Sans Pro', sans-serif;
+}
 
 /* ==========================================================================
    Helper classes
